@@ -47,7 +47,7 @@ ifeq ($(USE_IMAGE_DIGESTS), true)
 endif
 
 # Image URL to use all building/pushing image targets
-IMG ?= quay.io/opendatahub/data-science-pipelines-operator:main
+IMG ?= docker-na-public.artifactory.swg-devops.com/sys-knative-upstream-ci-team-z-docker-local/kubeflow-images/data-science-pipelines-operator:v1
 # ENVTEST_K8S_VERSION refers to the version of kubebuilder assets to be downloaded by envtest binary.
 ENVTEST_K8S_VERSION = 1.25.0
 # Namespace to deploy the operator
@@ -204,7 +204,7 @@ ENVTEST ?= $(LOCALBIN)/setup-envtest
 ## Tool Versions
 arch:= $(shell uname -m)
 
-ifeq ($(arch), ppc64le)
+ifeq ($(arch), s390x)
 KUSTOMIZE_VERSION ?= v5.1.0
 else
 KUSTOMIZE_VERSION ?= v3.8.7

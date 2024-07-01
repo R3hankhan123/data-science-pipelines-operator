@@ -7,6 +7,6 @@ spec:
   objectStorage:
     minio:
       deploy: true
-      image: 'quay.io/opendatahub/minio:RELEASE.2019-08-14T20-37-41Z-license-compliance'
+      image: 'minio/minio:RELEASE.2020-12-18T03-27-42Z'
   mlpipelineUI:
-    image: quay.io/opendatahub/ds-pipelines-frontend:latest
+    image: docker-na-public.artifactory.swg-devops.com/sys-knative-upstream-ci-team-z-docker-local/kubeflow-images/frontend:latest

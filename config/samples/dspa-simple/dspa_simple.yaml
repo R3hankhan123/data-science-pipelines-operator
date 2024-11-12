@@ -15,6 +15,6 @@ spec:
     enableExternalRoute: true
     minio:
       deploy: true
-      image: 'quay.io/opendatahub/minio:RELEASE.2019-08-14T20-37-41Z-license-compliance'
+      image: 'quay.io/r3hankhan/minio:RELEASE.2020-12-18T03-27-42Z'
   mlpipelineUI:
-    image: quay.io/opendatahub/ds-pipelines-frontend:latest
+    image: quay.io/r3hankhan/kubeflow-images/frontend:latest

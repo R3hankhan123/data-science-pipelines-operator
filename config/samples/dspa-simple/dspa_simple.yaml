@@ -17,4 +17,4 @@ spec:
       deploy: true
       image: 'quay.io/r3hankhan/minio:RELEASE.2020-12-18T03-27-42Z'
   mlpipelineUI:
-    image: quay.io/r3hankhan/kubeflow-images/frontend:latest
+    image: quay.io/r3hankhan/kubeflow-images/frontend:latest_v2
